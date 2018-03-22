@@ -1,0 +1,17 @@
+uuid: 1d19b350-bef4-48d3-8c2c-f0824c37e61e
+langcode: es
+status: true
+dependencies: {  }
+name: 'Ultra Limited Wysiwyg'
+format: ultra_limited_wysiwyg
+weight: 0
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<a href hreflang><p class> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type=''1 A I''> <li> <dl> <dt> <dd> <h2 id=''jump-*''> <h3 id> <h4 id> <h5 id> <h6 id>'
+      filter_html_help: true
+      filter_html_nofollow: false

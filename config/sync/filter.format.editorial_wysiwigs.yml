@@ -1,0 +1,8 @@
+uuid: f7640ba9-6382-4c73-b3cb-86ef8e021e8b
+langcode: es
+status: true
+dependencies: {  }
+name: 'Editorial Wysiwigs'
+format: editorial_wysiwigs
+weight: 0
+filters: {  }

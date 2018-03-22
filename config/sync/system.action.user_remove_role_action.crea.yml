@@ -1,0 +1,14 @@
+uuid: 5f0cdbe8-dfde-4abd-998a-e5f58b89d57a
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.crea
+  module:
+    - user
+id: user_remove_role_action.crea
+label: 'Elimina el rol Creador de Eventos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: crea

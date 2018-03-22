@@ -1,0 +1,20 @@
+uuid: 1568f85c-e40c-4d5c-a9a4-7940385fb3c4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_nombrecompleto
+  module:
+    - user
+id: user.user.field_nombrecompleto
+field_name: field_nombrecompleto
+entity_type: user
+bundle: user
+label: nombreCompleto
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

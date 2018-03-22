@@ -1,0 +1,18 @@
+uuid: 1c4d1d17-7175-458f-a6df-a21c5bd48bce
+langcode: es
+status: true
+dependencies: {  }
+id: crea
+label: 'Creador de Eventos'
+weight: 3
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access in-place editing'
+  - 'create article content'
+  - 'create url aliases'
+  - 'delete article revisions'
+  - 'edit any article content'
+  - 'revert article revisions'
+  - 'view article revisions'
+  - 'view the administration theme'

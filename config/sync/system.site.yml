@@ -1,0 +1,14 @@
+uuid: 8102058f-6d9a-41ab-a65c-0ed17ea09913
+name: drupal2018
+mail: treibc.12@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: es
+default_langcode: es
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

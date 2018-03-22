@@ -1,0 +1,49 @@
+uuid: f06511f2-c094-4711-bcf4-4ea96574acf3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.evento.body
+    - field.field.node.evento.field_fecha
+    - field.field.node.evento.field_img
+    - node.type.evento
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.evento.default
+targetEntityType: node
+bundle: evento
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_fecha:
+    weight: 102
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_img:
+    weight: 103
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true
