@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:hero:d1bd928d-768d-422e-879a-54a3301a7833'
+  module:
+    - block_content
+    - system
+  theme:
+    - sizzle
+id: events_hero
+theme: sizzle
+region: hero
+weight: -2
+provider: null
+plugin: 'block_content:d1bd928d-768d-422e-879a-54a3301a7833'
+settings:
+  id: 'block_content:d1bd928d-768d-422e-879a-54a3301a7833'
+  label: 'Events hero'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/events\r\n/events/*"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,22 @@
+// Node: Location
+// -----------------------------------------------------------------------------
+.location {
+
+  &__opening-hours {
+    margin-top: 1em;
+  }
+
+  &__images {
+    margin-bottom: 2.0em;
+
+    .field__item {
+      margin-bottom: 1em;
+    }
+
+    img {
+      display: block;
+      border: 1px solid $brand-primary;
+      padding: 0.25em;
+    }
+  }
+}

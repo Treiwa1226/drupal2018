@@ -1,0 +1,23 @@
+{% extends "block.html.twig" %}
+{#
+/**
+ * @file
+ * Template for the main navigation.
+ */
+#}
+{% block content %}
+<nav class="navbar navbar-default">
+  <div class="navbar-header">
+    <div class="visible-xs pull-left">
+      <a href="/menu" class="btn">{% trans %} Menu {% endtrans %}</a>
+    </div>
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+      <i class="fa fa-cutlery fa-2x"></i>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse" id="navbar-collapse">
+    {{ content }}
+  </div>
+</nav>
+{% endblock %}

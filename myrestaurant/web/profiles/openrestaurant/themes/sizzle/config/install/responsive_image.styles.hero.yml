@@ -1,0 +1,20 @@
+uuid: d5920f99-7f11-47fc-822c-8481b330007d
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.hero__lg
+  theme:
+    - sizzle
+_core:
+  default_config_hash: a524LkNgYIxr4REXctpPweN0OisMf0i5paszuaxT1Pw
+id: hero
+label: Hero
+image_style_mappings:
+  -
+    breakpoint_id: sizzle.lg
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: hero__lg
+breakpoint_group: sizzle
+fallback_image_style: hero__lg

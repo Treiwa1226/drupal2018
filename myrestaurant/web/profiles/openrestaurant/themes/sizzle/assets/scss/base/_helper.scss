@@ -1,0 +1,226 @@
+// Text helpers
+// -----------------------------------------------------------------------------
+.text {
+  @extend p;
+
+  &--normal {
+    @extend p;
+  }
+
+  &--large {
+    font-size: 30px;
+    line-height: 140%;
+  }
+
+  &--small {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  &--extrasmall {
+    font-size: 12px;
+    line-height: 180%;
+  }
+
+  &--italic {
+    font-style: italic;
+  }
+
+  &--bold {
+    font-weight: 700;
+  }
+
+  &--left {
+    text-align: left;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--lowercase {
+    text-transform: lowercase;
+  }
+
+  &--capitalize {
+    text-transform: capitalize;
+  }
+}
+
+// Border helpers.
+// Use as .border--WIDTH--DIRECTION e.g .border--xs--top.
+// -----------------------------------------------------------------------------
+$directions: top, right, bottom, left;
+$sizes: xs 1px, sm 2px, md 5px, lg 10px;
+@each $size in $sizes {
+  $width: nth($size, 1);
+  $value: nth($size, 2);
+  .border--#{$width} {
+    border: $value solid $brand-primary !important;
+  }
+
+  @each $direction in $directions {
+    .border--#{$width}--#{$direction} {
+      border-#{$direction}: $value solid $brand-primary;
+    }
+  }
+}
+
+// Margin helpers.
+// Use as .margin--SIZE--DIRECTION e.g .margin--lg--top.
+// -----------------------------------------------------------------------------
+$margins: xs 10px, sm 15px, md 25px, lg 50px;
+$directions: top, right, bottom, left;
+@each $margin in $margins {
+  $size: nth($margin, 1);
+  $value: nth($margin, 2);
+  .margin--#{$size} {
+    margin: $value;
+  }
+  @each $direction in $directions {
+    .margin--#{$size}--#{$direction} {
+      margin-#{$direction}: $value !important;
+    }
+    .clear-margin--#{$direction} {
+      margin-#{$direction}: 0;
+    }
+    .clear-margin--#{$size}--#{$direction} {
+      margin-#{$direction}: - $value;
+    }
+  }
+}
+
+// Padding helpers.
+// Use as .padding--SIZE--DIRECTION e.g .padding--lg--top.
+// -----------------------------------------------------------------------------
+$paddings: xs 10px, sm 15px, md 25px, lg 50px;
+$directions: top, right, bottom, left;
+@each $padding in $paddings {
+  $size: nth($padding, 1);
+  $value: nth($padding, 2);
+  .padding--#{$size} {
+    padding: $value !important;
+  }
+  @each $direction in $directions {
+    .padding--#{$size}--#{$direction} {
+      padding-#{$direction}: $value !important;
+    }
+    .clear-padding--#{$direction} {
+      padding-#{$direction}: 0;
+    }
+  }
+}
+
+// Link
+// -----------------------------------------------------------------------------
+.link {
+
+  &--overlay {
+    color: white;
+    text-align: center;
+    background: rgba(black, 0.3);
+    padding: 1.5em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-shadow: 0 0 1px rgba(black, 0.7);
+    transition: all 500ms;
+
+    &:hover {
+      color: white;
+      background: rgba(black, 0.7);
+    }
+
+    h3 {
+      color: white;
+      font-size: 1.2em;
+      line-height: 120%;
+      margin: 0;
+
+      @include breakpoint(md) {
+        font-size: 1.8em;
+      }
+    }
+
+    small {
+      font-size: 0.85em;
+    }
+
+    .bottom {
+      position: absolute;
+      left: 1em;
+      right: 1em;
+      bottom: 1em;
+
+      > div {
+        display: block;
+
+        p {
+          margin: 0;
+        }
+
+        + div {
+          margin-top: 0.5em;
+          padding-top: 0.5em;
+          position: relative;
+
+          &:before {
+            content: "";
+            background: white;
+            height: 1px;
+            width: 50%;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            margin-left: -25%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Ribbon
+// -----------------------------------------------------------------------------
+.ribbon {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  color: white;
+  padding: 5px 8px;
+  z-index: 200;
+  &:before {
+    content:"";
+    bottom: -10px;
+    left: 1px;
+    border-width: 10px 0 0 14px;
+    position: absolute;
+    display: block;
+    border-style: solid;
+    z-index:-1;
+  }
+
+  &.ribbon--primary {
+    background-color: $brand-primary;
+    &:before {
+      border-color: darken($brand-primary, 20) transparent transparent transparent;
+    }
+  }
+
+  &.ribbon--secondary {
+    background-color: $brand-secondary;
+    &:before {
+      border-color: darken($brand-secondary, 20) transparent transparent transparent;
+    }
+  }
+}

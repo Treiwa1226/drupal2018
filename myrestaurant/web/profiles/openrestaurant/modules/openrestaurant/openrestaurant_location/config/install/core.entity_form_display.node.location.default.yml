@@ -1,0 +1,105 @@
+uuid: d29c7494-74e7-4e41-9994-e480f2ecd8df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.location.field_location_address
+    - field.field.node.location.field_location_body
+    - field.field.node.location.field_location_contact
+    - field.field.node.location.field_location_geographic_data
+    - field.field.node.location.field_location_images
+    - field.field.node.location.field_location_opening_hours
+    - image.style.thumbnail
+    - node.type.location
+  module:
+    - address
+    - geofield
+    - image
+    - path
+    - text
+_core:
+  default_config_hash: QFQj0QCqhuu2_tsITP6HjF7RV9XOAgyN_4gtu5I1heo
+id: node.location.default
+targetEntityType: node
+bundle: location
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+  field_location_address:
+    weight: 1
+    settings:
+      default_country: null
+    third_party_settings: {  }
+    type: address_default
+  field_location_body:
+    weight: 6
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+  field_location_contact:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_location_geographic_data:
+    weight: 2
+    settings:
+      html5_geolocation: false
+    third_party_settings: {  }
+    type: geofield_latlon
+  field_location_images:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_location_opening_hours:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  path:
+    type: path
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 9
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 10
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 7
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

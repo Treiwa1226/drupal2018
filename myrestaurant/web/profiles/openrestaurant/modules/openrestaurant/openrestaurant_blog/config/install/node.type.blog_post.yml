@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: CT7k8vtidvddauc94hRHbXb66a1ABBrtgWILGo2yNBg
+name: 'Blog post'
+type: blog_post
+description: 'Use this content type to create a blog post.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: true

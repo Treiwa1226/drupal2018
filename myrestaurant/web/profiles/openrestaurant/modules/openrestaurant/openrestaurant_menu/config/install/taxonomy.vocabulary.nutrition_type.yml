@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Nutrition type'
+vid: nutrition_type
+description: ''
+hierarchy: 0
+weight: 0

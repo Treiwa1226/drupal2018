@@ -1,0 +1,76 @@
+// Hero
+// -----------------------------------------------------------------------------
+.hero {
+  position: relative;
+  overflow: hidden;
+
+  img {
+    display: block;
+    height: 35vh;
+    width: auto;
+
+    @include breakpoint(md) {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__caption {
+    text-align: center;
+    color: lighten($brand-primary, 40);
+    background-color: rgba(darken($brand-primary, 10), 0.90);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    margin: auto;
+    display: table;
+    padding: 2.5em;
+
+    @include breakpoint(md) {
+      width: 50%;
+    }
+
+    &:before {
+      content: " ";
+      border: 1px solid lighten($brand-primary, 30);
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      bottom: 15px;
+      left: 15px;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6, a {
+    font-family: $font-secondary;
+    margin: 0;
+    text-transform: uppercase;
+    position: relative;
+    color: lighten($brand-primary, 30);
+  }
+
+  p {
+    font-weight: 300;
+    margin: 0.25em 0 0;
+    line-height: 140%;
+
+    @include breakpoint(md) {
+      font-size: 1.2em;
+    }
+  }
+
+  small {
+    font-size: 0.85em;
+  }
+
+  a {
+    color: white;
+
+    &:hover {
+      color: $brand-secondary;
+    }
+  }
+}

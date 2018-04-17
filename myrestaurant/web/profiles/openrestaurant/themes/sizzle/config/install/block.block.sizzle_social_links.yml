@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  theme:
+    - sizzle
+id: social_links
+theme: sizzle
+region: footer
+weight: 20
+provider: null
+plugin: 'block_content:0a5562b7-84c7-4baf-9b76-fbd6d8d0c8a4'
+settings:
+  id: 'block_content:0a5562b7-84c7-4baf-9b76-fbd6d8d0c8a4'
+  label: 'Social links'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

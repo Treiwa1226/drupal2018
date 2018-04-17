@@ -1,0 +1,17 @@
+name: Blog
+description: 'Blog system for the Open Restaurant.'
+type: module
+core: 8.x
+dependencies:
+  - field
+  - file
+  - image
+  - menu_ui
+  - node
+  - path
+  - text
+  - user
+  - views
+  - openrestaurant_config
+version: 8.x-2.0-dev
+package: 'Open Restaurant'

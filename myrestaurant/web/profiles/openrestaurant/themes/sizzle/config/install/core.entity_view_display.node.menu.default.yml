@@ -1,0 +1,94 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.menu.field_menu_categories
+    - field.field.node.menu.field_menu_description
+    - field.field.node.menu.field_menu_featured
+    - field.field.node.menu.field_menu_images
+    - field.field.node.menu.field_menu_locations
+    - field.field.node.menu.field_menu_nutrition_types
+    - field.field.node.menu.field_menu_teaser
+    - field.field.node.menu.field_menu_variants
+    - node.type.menu
+  module:
+    - field_collection
+    - image
+    - text
+    - user
+id: node.menu.default
+targetEntityType: node
+bundle: menu
+mode: default
+content:
+  field_menu_categories:
+    weight: 5
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_menu_description:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_menu_featured:
+    weight: 4
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_menu_images:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_menu_locations:
+    weight: 8
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_menu_nutrition_types:
+    type: entity_reference_entity_view
+    weight: 6
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_menu_teaser:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_menu_variants:
+    weight: 7
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_items
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

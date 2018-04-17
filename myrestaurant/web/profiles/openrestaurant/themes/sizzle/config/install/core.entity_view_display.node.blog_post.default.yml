@@ -1,0 +1,45 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.blog_post.field_blog_post_body
+    - field.field.node.blog_post.field_blog_post_featured_image
+    - field.field.node.blog_post.field_disqus
+    - node.type.blog_post
+  module:
+    - disqus
+    - image
+    - text
+    - user
+id: node.blog_post.default
+targetEntityType: node
+bundle: blog_post
+mode: default
+content:
+  field_blog_post_body:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    type: text_summary_or_trimmed
+  field_blog_post_featured_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_disqus:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: disqus_comment
+  links:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
+

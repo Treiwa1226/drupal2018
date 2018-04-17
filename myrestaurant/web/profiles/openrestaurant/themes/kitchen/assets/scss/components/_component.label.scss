@@ -1,0 +1,17 @@
+// Label
+// -----------------------------------------------------------------------------
+%label {
+  display: block;
+  font-size: 1.1em;
+  margin: 0 0 0.25em;
+}
+
+label,
+.label,
+.form-composite > legend {
+  @extend %label;
+
+  .container-inline & {
+    display: inline-block;
+  }
+}

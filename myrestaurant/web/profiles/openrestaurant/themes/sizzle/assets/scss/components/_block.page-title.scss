@@ -1,0 +1,28 @@
+// Block: Page title
+// -----------------------------------------------------------------------------
+.block--page--title {
+  margin: 0;
+  text-align: center;
+
+  .path--node & {
+    text-align: left;
+
+    @include breakpoint(md) {
+      display: none;
+    }
+  }
+}
+
+.page__title {
+  margin: 0 0 0.5em;
+  text-transform: uppercase;
+
+  .path--node .node & {
+    display: none;
+    margin-bottom: 0.25em;
+    
+    @include breakpoint(md) {
+      display: block;
+    }
+  }
+}

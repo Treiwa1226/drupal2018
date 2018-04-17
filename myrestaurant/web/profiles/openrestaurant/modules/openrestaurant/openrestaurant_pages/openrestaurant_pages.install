@@ -1,0 +1,17 @@
+<?php
+/**
+ * @file
+ * Installation hooks for Open Restaurant Pages.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function openrestaurant_pages_install() {
+  // Set front page to node with id 1.
+  // Created via theme demo_content.
+  \Drupal::configFactory()
+    ->getEditable('system.site')
+    ->set('page.front', '/node/1')
+    ->save(TRUE);
+}

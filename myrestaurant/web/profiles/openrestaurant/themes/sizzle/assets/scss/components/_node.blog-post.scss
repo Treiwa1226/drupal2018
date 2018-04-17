@@ -1,0 +1,52 @@
+// Node: Blog Post
+// -----------------------------------------------------------------------------
+.blog-post {
+
+  &__date {
+    margin-bottom: 0.2em;
+  }
+
+  &__featured-image {
+    margin-bottom: 1.5em;
+
+    img {
+      display: block;
+      border: 1px solid $brand-primary;
+      padding: 0.25em;
+    }
+  }
+
+  &__readmore {
+    display: inline-block;
+    margin-top: 1em;
+  }
+
+  &__body {
+    margin-bottom: 1.5em;
+  }
+}
+
+// Display mode: Featured.
+// -----------------------------------------------------------------------------
+.blog-post--featured {
+  min-height: 200px;
+}
+
+// Display mode: Teaser
+// -----------------------------------------------------------------------------
+.blog-post--teaser {
+
+}
+
+// Display mode: Full.
+// -----------------------------------------------------------------------------
+.blog-post--full {
+
+  .blog-post {
+
+    &__date {
+      margin-top: -0.25em;
+      margin-bottom: 1.0em;
+    }
+  }
+}

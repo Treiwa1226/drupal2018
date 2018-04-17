@@ -1,0 +1,35 @@
+uuid: 4b0df1cc-91c1-4409-bab3-6f97107fe8e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location_address
+    - node.type.location
+  module:
+    - address
+_core:
+  default_config_hash: ANaXQ2-TWqmXt3tNf28uC5ngU-dSdVDBBxyrzyPuzeI
+id: node.location.field_location_address
+field_name: field_location_address
+entity_type: node
+bundle: location
+label: Address
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  fields:
+    administrativeArea: administrativeArea
+    locality: locality
+    dependentLocality: dependentLocality
+    postalCode: postalCode
+    addressLine1: addressLine1
+    addressLine2: addressLine2
+    sortingCode: '0'
+    organization: '0'
+    recipient: '0'
+  langcode_override: ''
+field_type: address

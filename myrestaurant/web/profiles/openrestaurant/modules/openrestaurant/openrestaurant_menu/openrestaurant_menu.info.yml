@@ -1,0 +1,22 @@
+name: Menu
+description: 'Menu management for Open Restaurant.'
+type: module
+core: 8.x
+dependencies:
+  - ctools
+  - field
+  - field_collection
+  - file
+  - image
+  - menu_ui
+  - node
+  - openrestaurant_config
+  - openrestaurant_plugins
+  - path
+  - pathauto
+  - taxonomy
+  - text
+  - user
+  - views
+version: 8.x-2.0-dev
+package: 'Open Restaurant'

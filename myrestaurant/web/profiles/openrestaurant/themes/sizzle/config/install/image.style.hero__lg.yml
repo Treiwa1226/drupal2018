@@ -1,0 +1,16 @@
+uuid: d9690e6e-b414-45a4-ab20-edba59e70d05
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 4IhJanheO78Fyz-WJhRHyfXkLZhkSdNcPIWmToSGv0w
+name: hero__lg
+label: 'Hero (lg)'
+effects:
+  c588c6ad-cdf4-47be-84b9-e7dd0c0e8c82:
+    uuid: c588c6ad-cdf4-47be-84b9-e7dd0c0e8c82
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 250

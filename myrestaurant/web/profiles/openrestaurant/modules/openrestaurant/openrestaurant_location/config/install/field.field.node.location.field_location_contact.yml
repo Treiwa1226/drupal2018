@@ -1,0 +1,23 @@
+uuid: 52a87557-a68f-4809-85dc-043720dc9169
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location_contact
+    - node.type.location
+  module:
+    - text
+_core:
+  default_config_hash: z_6u1hKTttuvhebJG3U36gv_aHDt8D7QroTMmYiPs5w
+id: node.location.field_location_contact
+field_name: field_location_contact
+entity_type: node
+bundle: location
+label: Contact
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
