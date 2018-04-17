@@ -1,0 +1,25 @@
+uuid: 5f6de6ac-acd8-493f-b10c-6a2f321d498b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: featured_articles
+label: 'Featured Articles'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      article: article
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 3
+  act_as_queue: false
+  reverse_in_admin: false
