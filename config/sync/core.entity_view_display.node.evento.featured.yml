@@ -1,8 +1,9 @@
-uuid: f06511f2-c094-4711-bcf4-4ea96574acf3
+uuid: 0f8b9574-b609-408e-b995-5f80366c9d10
 langcode: es
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.featured
     - field.field.node.evento.body
     - field.field.node.evento.field_fecha
     - field.field.node.evento.field_img
@@ -13,10 +14,10 @@ dependencies:
     - image
     - text
     - user
-id: node.evento.default
+id: node.evento.featured
 targetEntityType: node
 bundle: evento
-mode: default
+mode: featured
 content:
   body:
     label: hidden
